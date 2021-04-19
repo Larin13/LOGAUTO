@@ -36,6 +36,10 @@
    text-decoration: none;
 }
 
+.nav_link_active{
+   border-bottom: 2px solid #252A34;
+}
+
 .nav_link:hover{
    opacity: 70%;
 }
@@ -273,6 +277,51 @@
 
 .shop_item_btn:hover{
    border: 1px solid black;
+}
+
+.page_number{
+   text-align: center;
+   padding-bottom: 50px;
+   padding-top: 50px;
+}
+
+.page_number_link{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 25px;
+   color: #343434;
+   text-decoration: none;
+   margin-right: 10px;
+}
+
+.page_number_link_active{
+   color: #346CD9;
+   text-decoration: underline;
+}
+
+.page_number_link:hover{
+   color: #346CD9;
+}
+
+.page_number_btn{
+   border: 1px solid #346CD9;
+   box-sizing: border-box;
+   border-radius: 5px;
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 25px;
+   color: #346CD9;
+   text-decoration: none;
+   padding: 5px 15px;
+}
+
+.page_number_btn:hover{
+   font-weight: 900;
+   border: 1px solid #346CD9;
 }
 
 .footer{
