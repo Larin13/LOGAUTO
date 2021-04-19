@@ -1,0 +1,323 @@
+*{
+   box-sizing: border-box;
+}
+
+.container{
+   width: 90%;
+   margin: 0 auto;
+}
+
+.header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav{
+   width: 50%;
+}
+
+.nav_list{
+   display: flex;
+   justify-content: space-around;
+}
+
+.nav_item{
+   list-style-type: none;
+}
+
+.nav_link{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 19px;
+   color: #252A34;
+   text-decoration: none;
+}
+
+.nav_link:hover{
+   opacity: 70%;
+}
+
+.header_btn{
+   width: 100px;
+   height: 40px;
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 22px;
+   cursor: pointer;
+}
+
+.login{
+   color: #FF2E63;
+   border: none;
+   background-color: transparent;
+   border-radius: 5px;
+   margin-right: 10px;
+}
+
+.login:hover{
+   border: 1px solid black;
+}
+
+.register{
+   background-color: #FF2E63;
+   border: none;
+   color: white;
+   border-radius: 5px;
+}
+
+.register:hover{
+   border: 1px solid black;
+}
+
+.main{
+   position: relative;
+   padding-top: 30px;
+}
+
+.filters{
+   width: 20%;
+   position: absolute;
+   top: 50px;
+   left: 0;
+   display: flex;
+   flex-direction: column;
+   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.h2_brands{
+   margin-left: 10px;
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 26px;
+   letter-spacing: -0.2px;
+   color: #1C1C1C;
+}
+
+.brands{
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 50px;
+}
+
+.brands_item{
+   display: flex;
+   justify-content: space-between;
+}
+
+.brand_link{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 28px;
+   color: #252A34;
+   text-decoration: none;
+}
+
+.brand_link:hover{
+   font-weight: bold;
+}
+
+.bland_link_opacity{
+   opacity: 60%;
+}
+
+.brand_link_arrow{
+   font-size: 12px;
+   margin-left: 10px;
+}
+
+.brand_link_number{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 28px;
+   color: #252A34;
+   text-decoration: none;
+   opacity: 60%;
+}
+
+.h2_contacts{
+   margin-left: 10px;
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 26px;
+   letter-spacing: -0.2px;
+   color: #1C1C1C;
+}
+
+.contacts_name{
+   margin-left: 10px;
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 28px;
+   color: #252A34;
+}
+
+.contacts_value{
+   margin-left: 10px;
+   font-weight: 400;
+}
+
+.shop{
+   width: 75%;
+   margin-left: auto;
+}
+
+.h2_shop{
+   font-family: Rajdhani;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 50px;
+   line-height: 64px;
+   color: #343434;
+}
+
+.shop_list{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.shop_item{
+   display: flex;
+   flex-direction: column;
+   width: calc(33% - 15px);
+   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+   margin-bottom: 30px;
+   padding-bottom: 20px;
+}
+
+.shop_item:nth-child(3n+1) .shop_price{
+   color: #FF2E63;
+}
+
+.shop_item:nth-child(3n+3) .shop_price{
+   color: #FF2E63;
+}
+
+
+
+.shop_img{
+   width: 100%;
+}
+
+.shop_name{
+   font-family: Rajdhani;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 20px;
+   line-height: 26px;
+   color: #252A34;
+   margin-left: 10px;
+}
+
+.shop_price{
+   font-family: Rajdhani;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 30px;
+   line-height: 38px;
+   color: #252A34;
+   margin-top: auto;
+   margin-left: 10px;
+}
+
+.shop_sale{
+   font-family: Rajdhani;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 26px;
+   text-decoration-line: line-through;
+   color: #999999;
+}
+
+.shop_available{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 19px;
+   color: #343434;
+   margin-left: 10px;
+}
+
+.shop_item_btn{
+   width: 100px;
+   height: 40px;
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 22px;
+   cursor: pointer;
+   background-color: #FF2E63;
+   border: none;
+   color: white;
+   border-radius: 5px;
+   margin: 0 auto;
+}
+
+.shop_item_btn:hover{
+   border: 1px solid black;
+}
+
+.footer{
+   display: flex;
+   justify-content: space-around;
+   background-color: #346CD9;;
+   align-items: center;
+   height: 70px;
+}
+
+.footer_logo{
+   width: 50%;
+}
+
+.footer_logo_text{
+   font-family: Rajdhani;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 30px;
+   line-height: 38px;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
+
+.footer_nav{
+   width: 45%;
+}
+
+.footer_nav_list{
+   display: flex;
+   justify-content: space-around;
+   list-style-type: none;
+}
+
+.footer_nav_link{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 19px;
+   color: #FFFFFF;
+   text-decoration: none;
+}
+
+.footer_nav_link:hover{
+   font-weight: 600;
+}
