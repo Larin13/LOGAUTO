@@ -45,8 +45,8 @@
 }
 
 .header_btn{
-   width: 100px;
-   height: 40px;
+   text-decoration: none;
+   padding: 5px 15px;
    font-family: Open Sans;
    font-style: normal;
    font-weight: 600;
@@ -64,7 +64,7 @@
 }
 
 .login:hover{
-   border: 1px solid black;
+   opacity: 70%;
 }
 
 .register{
@@ -75,25 +75,109 @@
 }
 
 .register:hover{
-   border: 1px solid black;
+   opacity: 70%;
 }
 
 .main{
    position: relative;
-   padding-top: 30px;
 }
 
 .filters{
+   padding-top: 20px;
+   padding-bottom: 20px;
    width: 20%;
-   position: absolute;
-   top: 50px;
+   position: sticky;
+   top: 0;
    left: 0;
    display: flex;
    flex-direction: column;
    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+   float: left;
+}
+
+.filters_price_list{
+   position: relative;
+   margin-bottom: 30px;
+}
+
+.filters_price_checkbox{
+   width: 100%;
+   height: 20px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   cursor: pointer;
+}
+
+.filters_price_checkbox:checked ~ .filters_price_item{
+   max-height: 300px;
+}
+
+.filters_price_checkbox:checked ~ .h2_brands_arrow{
+   transform: rotate(180deg);
+}
+
+.filters_price_item{
+   display: flex;
+   justify-content: space-around;
+   max-height: 0;
+   overflow: hidden;
+}
+
+.filters_price_label{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 19px;
+   color: #999999;
+   margin-left: 10px;
+}
+
+.filters_price_input{
+   border: 1px solid #999999;
+   box-sizing: border-box;
+   border-radius: 5px;
+   width: 95%;
+   height: 35px;
+}
+
+.brands_checkbox{
+   opacity: 0;
+   cursor: pointer;
+   position: absolute;
+   top: 0px;
+   left: 0;
+   height: 20px;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+.brands_list{
+   margin-bottom: 30px;
+   position: relative;
+}
+
+.brands_checkbox:checked ~ .brands_item{
+   max-height: 300px;
+}
+
+.brands_checkbox:checked ~ .h2_brands_arrow{
+   transform: rotate(180deg);
+}
+
+.brands_item{
+   max-height: 0;
+   overflow: hidden;
+   margin-left: 10px;
+   margin-right: 10px;
 }
 
 .h2_brands{
+   display: inline-block;
+   margin: 0;
    margin-left: 10px;
    font-family: Open Sans;
    font-style: normal;
@@ -104,10 +188,19 @@
    color: #1C1C1C;
 }
 
+.h2_brands_arrow{
+   color: #1C1C1C;
+   font-size: 10px;
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   z-index: -1;
+}
+
 .brands{
    display: flex;
    flex-direction: column;
-   padding-bottom: 50px;
+   
 }
 
 .brands_item{
@@ -115,7 +208,15 @@
    justify-content: space-between;
 }
 
-.brand_link{
+.brands_item_label{
+   cursor: pointer;
+}
+
+.brands_item_checkbox{
+   cursor: pointer;
+}
+
+.brands_item_name{
    font-family: Open Sans;
    font-style: normal;
    font-weight: normal;
@@ -125,20 +226,15 @@
    text-decoration: none;
 }
 
-.brand_link:hover{
+.brands_item_name:hover{
    font-weight: bold;
 }
 
-.bland_link_opacity{
+.blans_item_name_opacity{
    opacity: 60%;
 }
 
-.brand_link_arrow{
-   font-size: 12px;
-   margin-left: 10px;
-}
-
-.brand_link_number{
+.brands_item_number{
    font-family: Open Sans;
    font-style: normal;
    font-weight: normal;
@@ -149,7 +245,22 @@
    opacity: 60%;
 }
 
+.filters_search_list{
+   margin-bottom: 30px;
+}
+
+.filters_search_input{
+   border: 1px solid #999999;
+   box-sizing: border-box;
+   border-radius: 5px;
+   width: 90%;
+   margin: 0 10px;
+   margin-top: 10px;
+   height: 35px;
+}
+
 .h2_contacts{
+   margin: 0;
    margin-left: 10px;
    font-family: Open Sans;
    font-style: normal;
@@ -171,8 +282,14 @@
 }
 
 .contacts_value{
+   text-decoration: none;
    margin-left: 10px;
    font-weight: 400;
+   font-family: Open Sans;
+   font-style: normal;
+   font-size: 14px;
+   line-height: 28px;
+   color: #252A34;
 }
 
 .shop{

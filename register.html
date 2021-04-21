@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/register.css">
+   <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+   <title>Login/Register</title>
+</head>
+
+<body>
+   <div class="container">
+      <header class="header">
+         <div class="logo"><img class="hedaer_logo" src="./image/LOGOAuto.png" alt="logo"></div>
+         <nav class="nav">
+            <ul class="nav_list">
+               <li class="nav_item"><a href="https://larin13.github.io/flex/index.html" class="nav_link">Home</a></li>
+               <li class="nav_item"><a href="#" class="nav_link">About us</a></li>
+               <li class="nav_item"><a href="https://larin13.github.io/flex/shop.html" class="nav_link">Shop</a></li>
+               <li class="nav_item"><a href="#" class="nav_link">Blog</a></li>
+               <li class="nav_item"><a href="#" class="nav_link">Contacts</a></li>
+               <li class="nav_item"><a href="#HowItWorks" class="nav_link">How it Works</a></li>
+            </ul>
+         </nav>
+         <div class="header_btn_list">
+            <a href="#" class="header_btn login">Login</a>
+            <a href="#" class="header_btn register">Register</a>
+         </div>
+      </header>
+
+      <div class="login_form">
+         <div class="login_form_container">
+            <div class="login_form_list">
+               <input type="radio" name="radio" class="login_radio" id="login_radio">
+               <label for="login_radio" class="login_radio_label"><span class="login_form_h2">Login</span></label>
+               <form class="login_field">
+                  <p class="login_form_list_title">Login</p>
+                  <div class="login_form_item">
+                     <label class="login_form_label">
+                        E-mail<br>
+                        <input type="text" name="email" class="login_form_input" required>
+                     </label>
+                  </div>
+                  <div class="login_form_item">
+                     <label class="login_form_label">
+                        Password<br>
+                        <input type="password" name="password" class="login_form_input" required>
+                     </label>
+                     <a href="#" class="forgot_password">Forgot your password?</a>
+                  </div>
+                  <label class="remember_me_label">
+                     <input type="checkbox" name="remember_me">
+                     Remember me
+                  </label>
+                  <div class="login_form_btn">
+                     <input class="login_btn" type="submit" name="login" value="Login">
+                  </div>
+               </form>
+            </div>
+            <div class="register_form_list">
+               <input type="radio" name="radio" class="register_radio" id="register_radio">
+               <label for="register_radio" class="register_radio_label"><span
+                     class="register_form_h2">Register</span></label>
+               <form class="register_field">
+                  <p class="register_form_list_title">Create an Account</p>
+                  <div class="register_form_item register_form_item_flex">
+                     <label class="register_form_label register_form_label_flex">
+                        Firts Name<br>
+                        <input type="text" class="register_form_input" required>
+                     </label>
+                     <label class="register_form_label">
+                        Last Name<br>
+                        <input type="text" class="register_form_input" required>
+                     </label>
+                  </div>
+                  <div class="register_form_item">
+                     <label class="register_form_label">
+                        E-mail<br>
+                        <input type="text" class="register_form_input" required>
+                     </label>
+                  </div>
+                  <div class="register_form_item">
+                     <label class="register_form_label">
+                        <input type="radio" name="sex" checked>
+                        Male
+                     </label>
+                     <label class="register_form_label">
+                        <input type="radio" name="sex">
+                        Female
+                     </label>
+                  </div>
+                  <div class="register_form_item_flex">
+                     <label class="register_form_label">
+                        Password<br>
+                        <input type="password" class="register_form_input" required>
+                     </label>
+                     <label class="register_form_label">
+                        Confirm Password<br>
+                        <input type="password" class="register_form_input" required>
+                     </label>
+                  </div>
+                  <div class="register_form_btn">
+                     <input class="register_btn" type="submit" name="register" value="Register">
+                     <p class="register_btn_p">By clicking the 'Sign Up' button, you confirm that you accept our <a
+                           href="#" class="register_btn_link">Terms of Use</a> and
+                        <a href="#" class="register_btn_link">Privacy Policy</a> .
+                     </p>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+
+   </div>
+   <footer class="footer">
+      <div class="footer_logo">
+         <p class="footer_logo_text">LOGOAUTO</p>
+      </div>
+      <nav class="footer_nav">
+         <ul class="footer_nav_list">
+            <li class="footer_nav_item"><a href="https://larin13.github.io/flex/index.html"
+                  class="footer_nav_link">Home</a></li>
+            <li class="footer_nav_item"><a href="#" class="footer_nav_link">About us</a></li>
+            <li class="footer_nav_item"><a href="https://larin13.github.io/flex/shop.html"
+                  class="footer_nav_link">Shop</a></li>
+            <li class="footer_nav_item"><a href="#" class="footer_nav_link">Blog</a></li>
+            <li class="footer_nav_item"><a href="#" class="footer_nav_link">Contacts</a></li>
+            <li class="footer_nav_item"><a href="#" class="footer_nav_link">How it Works</a></li>
+         </ul>
+      </nav>
+   </footer>
+</body>
+
+</html>

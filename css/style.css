@@ -45,8 +45,8 @@
 }
 
 .header_btn{
-   width: 100px;
-   height: 40px;
+   text-decoration: none;
+   padding: 5px 15px;
    font-family: Open Sans;
    font-style: normal;
    font-weight: 600;
@@ -64,7 +64,7 @@
 }
 
 .login:hover{
-   border: 1px solid black;
+   opacity: 70%;
 }
 
 .register{
@@ -75,8 +75,9 @@
 }
 
 .register:hover{
-   border: 1px solid black;
+   opacity: 70%;
 }
+
 
 .main{
    padding-top: 100px;
@@ -165,6 +166,10 @@
    flex-direction: column;
 }
 
+.car_item:nth-child(3n+1) .car_price{
+   color: #FF2E63;
+}
+
 .car_img{
    width: 100%;
 }
@@ -185,7 +190,7 @@
    font-weight: bold;
    font-size: 30px;
    line-height: 38px;
-   color: #FF2E63;
+   color: #252A34;
    margin-top: auto;
    margin-left: 10px;
 }

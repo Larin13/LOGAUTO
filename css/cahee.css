@@ -1,0 +1,151 @@
+*{
+   box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+   padding: 0;
+}
+
+.container{
+   background-image: url('../image/berrycahee.png');
+   background-repeat: no-repeat;
+   background-position-x: 50%;
+ 
+}
+
+.header{
+   width: 85%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+}
+
+.header_menu{
+   width: 70%;
+}
+
+.header_menu_list{
+   width: 100%;
+   display: flex;
+   justify-content: flex-end;
+}
+
+.header_menu_item{
+   list-style-type: none;
+   margin-right: 15px;
+}
+
+.header_menu_item:last-child{
+   margin-right: 0;
+}
+
+.header_menu_link{
+   text-decoration: none;
+   font-size: 16px;
+   line-height: 25px;
+   color: #262626;
+   font-weight: 700;
+   font-family: "Raleway";
+   text-align: right;
+}
+
+.header_menu_link:hover{
+   opacity: 70%;
+}
+
+.header_menu_link_active{
+   border-top: 2px solid #ff6033;
+}
+
+.head_page{
+   position: relative;
+   width: 85%;
+   height: 100vh;
+   margin: 0 auto;
+}
+
+.head_page_text{
+   width: 35%;
+}
+
+.head_page_h1{
+   margin-top: 150px;
+   font-size: 60px;
+   line-height: 25px;
+   color: #262626;
+   font-family: "Raleway";
+}
+
+.head_page_p{
+   font-size: 17px;
+   line-height: 27px;
+   color: #262626;
+   font-weight: 300;
+   font-family: "Raleway";
+}
+
+.head_page_btn{
+   font-size: 20px;
+   line-height: 27px;
+   color: #ffffff;
+   font-weight: 300;
+   font-family: "Raleway";
+   filter: drop-shadow(0px 2px 2.5px rgba(0,0,0,0.5));
+   background-color: #ff6033;
+   border: none;
+   padding: 5px 10px;
+}
+.head_page_btn:hover{
+   opacity: 70%;
+}
+
+.scroll{
+   position: absolute;
+   bottom: 250px;
+   left: 50%;
+}
+
+.scroll_link:hover{
+   opacity: 70%;
+}
+
+.about_us{
+   background-image: radial-gradient(circle at center, #00c3c3 0%, #00b8b7 32%, #00afae 68%, #009f9f 100%);
+}
+
+.about_us_container{
+   width: 85%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row-reverse;
+}
+
+.about_us_text{
+   width: 60%;
+}
+
+.about_us_h2{
+   font-size: 90px;
+   line-height: 27px;
+   color: #ffffff;
+   font-weight: 700;
+   font-family: "Raleway";
+}
+
+.about_us_p{
+   font-size: 17px;
+   line-height: 27px;
+   color: #ffffff;
+   font-weight: 300;
+   font-family: "Raleway";
+}
+
+.about_us_img{
+   width: 60%;
+}
+
+.about_img{
+   width: 100%;
+}

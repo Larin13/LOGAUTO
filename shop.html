@@ -19,67 +19,115 @@
             <ul class="nav_list">
                <li class="nav_item"><a href="https://larin13.github.io/flex/index.html" class="nav_link">Home</a></li>
                <li class="nav_item"><a href="#" class="nav_link">About us</a></li>
-               <li class="nav_item"><a href="#" class="nav_link nav_link_active">Shop</a></li>
+               <li class="nav_item"><a href="https://larin13.github.io/flex/shop.html"
+                     class="nav_link nav_link_active">Shop</a></li>
                <li class="nav_item"><a href="#" class="nav_link">Blog</a></li>
                <li class="nav_item"><a href="#" class="nav_link">Contacts</a></li>
                <li class="nav_item"><a href="#HowItWorks" class="nav_link">How it Works</a></li>
             </ul>
          </nav>
          <div class="header_btn_list">
-            <button class="header_btn login">Login</button>
-            <button class="header_btn register">Register</button>
+            <a href="#" class="header_btn login">Login</a>
+            <a href="#" class="header_btn register">Register</a>
          </div>
       </header>
       <main class="main">
          <div class="filters">
             <div class="brands">
-               <h2 class="h2_brands">Brands</h2>
-               <div class="brands_item">
-                  <a href="#" class="brand_link"><span class="brand_link_arrow">&#9658;</span> Audi</a>
-                  <span class="brand_link_number">(9)</span>
+               <div class="filters_price_list">
+                  <input class="filters_price_checkbox" type="checkbox">
+                  <h2 class="h2_brands">Price</h2>
+                  <span class="h2_brands_arrow">&#x25BC;</span>
+                  <div class="filters_price_item">
+                     <label for="" class="filters_price_label">
+                        Min<br>
+                        <input type="number" class="filters_price_input" placeholder="0" min="1000" max="100000"
+                           step="1000">
+                     </label>
+                     <label for="" class="filters_price_label">
+                        Max<br>
+                        <input type="number" class="filters_price_input" placeholder="0" min="1000" max="100000"
+                           step="1000">
+                     </label>
+                  </div>
                </div>
-               <div class="brands_item">
-                  <a href="#" class="brand_link"><span class="brand_link_arrow">&#9658;</span> Ford</a>
-                  <span class="brand_link_number">(3)</span>
+
+               <div class="brands_list">
+                  <input class="brands_checkbox" type="checkbox">
+                  <h2 class="h2_brands">Brands</h2>
+                  <span class="h2_brands_arrow">&#x25BC;</span>
+                  <div class="brands_item">
+                     <label class="brands_item_label">
+                        <input type="checkbox" name="car" class="brands_item_checkbox">
+                        <span class="brands_item_name">Audi</span>
+                     </label>
+                     <span class="brands_item_number">(17)</span>
+                  </div>
+                  <div class="brands_item">
+                     <label class="brands_item_label">
+                        <input type="checkbox" name="car" class="brands_item_checkbox">
+                        <span class="brands_item_name">Ford</span>
+                     </label>
+                     <span class="brands_item_number">(25)</span>
+                  </div>
+                  <div class="brands_item">
+                     <label class="brands_item_label">
+                        <input type="checkbox" name="car" class="brands_item_checkbox">
+                        <span class="brands_item_name">Bugatti</span>
+                     </label>
+                     <span class="brands_item_number">(3)</span>
+                  </div>
+                  <div class="brands_item">
+                     <label class="brands_item_label">
+                        <input type="checkbox" name="car" class="brands_item_checkbox">
+                        <span class="brands_item_name">Toyota</span>
+                     </label>
+                     <span class="brands_item_number">(13)</span>
+                  </div>
+                  <div class="brands_item">
+                     <label class="brands_item_label">
+                        <input type="checkbox" name="car" class="brands_item_checkbox">
+                        <span class="brands_item_name">Nissan</span>
+                     </label>
+                     <span class="brands_item_number">(11)</span>
+                  </div>
+                  <div class="brands_item">
+                     <label class="brands_item_label">
+                        <input type="checkbox" name="car" class="brands_item_checkbox">
+                        <span class="brands_item_name">Peugeot</span>
+                     </label>
+                     <span class="brands_item_number">(23)</span>
+                  </div>
+                  <div class="brands_item">
+                     <label class="brands_item_label">
+                        <input type="checkbox" name="car" class="brands_item_checkbox">
+                        <span class="brands_item_name">Volkswagen</span>
+                     </label>
+                     <span class="brands_item_number">(31)</span>
+                  </div>
                </div>
-               <div class="brands_item">
-                  <a href="#" class="brand_link"><span class="brand_link_arrow">&#9658;</span> Bugatti</a>
-                  <span class="brand_link_number">(3)</span>
-               </div>
-               <div class="brands_item">
-                  <a href="#" class="brand_link"><span class="brand_link_arrow">&#9658;</span> Passat</a>
-                  <span class="brand_link_number">(10)</span>
-               </div>
-               <div class="brands_item">
-                  <a href="#" class="brand_link"><span class="brand_link_arrow">&#9658;</span> Nissan</a>
-                  <span class="brand_link_number">(3)</span>
-               </div>
-               <div class="brands_item">
-                  <a href="#" class="brand_link bland_link_opacity"><span class="brand_link_arrow">&#9658;</span>
-                     Wolkswagen</a>
-                  <span class="brand_link_number">(0)</span>
-               </div>
-               <div class="brands_item">
-                  <a href="#" class="brand_link bland_link_opacity"><span class="brand_link_arrow">&#9658;</span>
-                     Fiat</a>
-                  <span class="brand_link_number">(0)</span>
+               <div class="filters_search_list">
+                  <h2 class="h2_brands">Search</h2>
+                  <div class="filters_search_item">
+                     <input type="text" class="filters_search_input" placeholder="Search by name...">
+                  </div>
                </div>
             </div>
             <div class="contacts">
                <h2 class="h2_contacts">Contacts Details</h2>
-               <p class="contacts_name">Phone: <span class="contacts_value">879-332-9375</span></p>
-               <p class="contacts_name">Email: <span class="contacts_value">info@pixsellz.io</span></p>
+               <p class="contacts_name">Phone: <a href="tel:+8793329375" class="contacts_value">879-332-9375</a></p>
+               <p class="contacts_name">Email: <a href="mailto:info@pixsellz.io"
+                     class="contacts_value">info@pixsellz.io</a></p>
                <p class="contacts_name">Adress: <span class="contacts_value">456 Hagenes Gardens Suite 808</span></p>
             </div>
          </div>
-
          <div class="shop">
             <h2 class="h2_shop">Our shop</h2>
             <div class="shop_list">
                <div class="shop_item">
                   <img class="shop_img" src="./image/car1.png" alt="car">
-                  <p class="shop_name">2016 Ford Mustang GT2016</p>
-                  <p class="shop_price">$7999 <span class="shop_sale">$12000</span></p>
+                  <p class="shop_name">2020 Audi S5 Coupe</p>
+                  <p class="shop_price">$10999 <span class="shop_sale">$12000</span></p>
                   <p class="shop_available">Available at our store</p>
                   <button class="shop_item_btn">Read more</button>
                </div>
@@ -92,41 +140,41 @@
                </div>
                <div class="shop_item">
                   <img class="shop_img" src="./image/car3.png" alt="car">
-                  <p class="shop_name">2016 Ford Mustang GT</p>
-                  <p class="shop_price">$7999 <span class="shop_sale">$12000</span></p>
+                  <p class="shop_name">2019 Bugatti Chiron</p>
+                  <p class="shop_price">$47999 <span class="shop_sale">$55000</span></p>
                   <p class="shop_available">Available at our store</p>
                   <button class="shop_item_btn">Read more</button>
                </div>
                <div class="shop_item">
                   <img class="shop_img" src="./image/car4.png" alt="car">
-                  <p class="shop_name">2016 Ford Mustang GT</p>
-                  <p class="shop_price">$7999 <span class="shop_sale">$12000</span></p>
+                  <p class="shop_name">2019 Porsche 911 Carrera</p>
+                  <p class="shop_price">$17999 <span class="shop_sale">$21000</span></p>
                   <p class="shop_available">Available at our store</p>
                   <button class="shop_item_btn">Read more</button>
                </div>
                <div class="shop_item">
-                  <img class="shop_img" src="./image/car1.png" alt="car">
-                  <p class="shop_name">2016 Ford Mustang GT</p>
-                  <p class="shop_price">$7999 <span class="shop_sale"></span></p>
+                  <img class="shop_img" src="./image/car5.png" alt="car">
+                  <p class="shop_name">2016 Nissan Rogue</p>
+                  <p class="shop_price">$15000 <span class="shop_sale"></span></p>
+                  <p class="shop_available">Available at our store</p>
+                  <button class="shop_item_btn">Read more</button>
+               </div>
+               <div class="shop_item">
+                  <img class="shop_img" src="./image/car6.png" alt="car">
+                  <p class="shop_name">2020 Toyota RAV 4</p>
+                  <p class="shop_price">$17999 <span class="shop_sale">$12000</span></p>
+                  <p class="shop_available">Available at our store</p>
+                  <button class="shop_item_btn">Read more</button>
+               </div>
+               <div class="shop_item">
+                  <img class="shop_img" src="./image/car7.png" alt="car">
+                  <p class="shop_name">2018 Ford Kuga</p>
+                  <p class="shop_price">$14999 <span class="shop_sale">$12000</span></p>
                   <p class="shop_available">Available at our store</p>
                   <button class="shop_item_btn">Read more</button>
                </div>
                <div class="shop_item">
                   <img class="shop_img" src="./image/car2.png" alt="car">
-                  <p class="shop_name">2016 Ford Mustang GT</p>
-                  <p class="shop_price">$7999 <span class="shop_sale">$12000</span></p>
-                  <p class="shop_available">Available at our store</p>
-                  <button class="shop_item_btn">Read more</button>
-               </div>
-               <div class="shop_item">
-                  <img class="shop_img" src="./image/car3.png" alt="car">
-                  <p class="shop_name">2016 Ford Mustang GT</p>
-                  <p class="shop_price">$7999 <span class="shop_sale">$12000</span></p>
-                  <p class="shop_available">Available at our store</p>
-                  <button class="shop_item_btn">Read more</button>
-               </div>
-               <div class="shop_item">
-                  <img class="shop_img" src="./image/car4.png" alt="car">
                   <p class="shop_name">2016 Ford Mustang GT</p>
                   <p class="shop_price">$7999 <span class="shop_sale"></span></p>
                   <p class="shop_available">Available at our store</p>
@@ -158,9 +206,11 @@
       </div>
       <nav class="footer_nav">
          <ul class="footer_nav_list">
-            <li class="footer_nav_item"><a href="#" class="footer_nav_link">Home</a></li>
+            <li class="footer_nav_item"><a href="https://larin13.github.io/flex/index.html"
+                  class="footer_nav_link">Home</a></li>
             <li class="footer_nav_item"><a href="#" class="footer_nav_link">About us</a></li>
-            <li class="footer_nav_item"><a href="#" class="footer_nav_link">Shop</a></li>
+            <li class="footer_nav_item"><a href="https://larin13.github.io/flex/shop.html"
+                  class="footer_nav_link">Shop</a></li>
             <li class="footer_nav_item"><a href="#" class="footer_nav_link">Blog</a></li>
             <li class="footer_nav_item"><a href="#" class="footer_nav_link">Contacts</a></li>
             <li class="footer_nav_item"><a href="#" class="footer_nav_link">How it Works</a></li>
