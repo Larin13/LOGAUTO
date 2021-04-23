@@ -275,6 +275,11 @@
    color: #343434;
 }
 
+.rules_item_img{
+   width: 4vw;
+   height: 4vw;
+}
+
 .rules_arrow{
    font-size: 20px;
    color: #343434;
