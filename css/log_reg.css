@@ -102,12 +102,62 @@ body{
    display: block;
 }
 
-.toggle_item_log:checked ~ .toggle_label .toggle_name_log{
-   border-bottom: 5px solid #FF2E63;;
+@keyframes border{
+   0%{
+      background-image: linear-gradient(to right, rgb(101, 115, 255), rgb(122, 113, 238), rgb(143, 112, 220), rgb(164, 110, 203), rgb(185, 109, 185), rgb(206, 107, 168), rgb(178, 125, 175), rgb(149, 143, 181), rgb(121, 162, 188), rgb(92, 180, 194), rgb(64, 198, 201), rgb(35, 216, 207), rgba(0, 255, 3, 1), rgba(113, 252, 0, 1));
+      background-size: 200%;
+      background-position: 0;
+   }
+
+   50%{
+      background-image: linear-gradient(to right, rgb(101, 115, 255), rgb(122, 113, 238), rgb(143, 112, 220), rgb(164, 110, 203), rgb(185, 109, 185), rgb(206, 107, 168), rgb(178, 125, 175), rgb(149, 143, 181), rgb(121, 162, 188), rgb(92, 180, 194), rgb(64, 198, 201), rgb(35, 216, 207), rgba(0, 255, 3, 1), rgba(113, 252, 0, 1));
+      background-size: 200%;
+      background-position: 100%;
+   }
+
+   100%{
+      background-image: linear-gradient(to right, rgb(101, 115, 255), rgb(122, 113, 238), rgb(143, 112, 220), rgb(164, 110, 203), rgb(185, 109, 185), rgb(206, 107, 168), rgb(178, 125, 175), rgb(149, 143, 181), rgb(121, 162, 188), rgb(92, 180, 194), rgb(64, 198, 201), rgb(35, 216, 207), rgba(0, 255, 3, 1), rgba(113, 252, 0, 1));
+      background-size: 200%;
+      background-position: 50%;
+   }
 }
 
-.toggle_item_reg:checked ~ .toggle_label .toggle_name_reg{
-   border-bottom: 5px solid #FF2E63;;
+.toggle_name_log{
+   position: relative;
+   background-color: white;
+}
+
+.toggle_name_reg{
+   position: relative;
+   background-color: white;
+}
+
+.toggle_name_log::after{
+   content: "";
+   width: calc(100% + 40px);
+   height: 7px;
+   position: absolute;
+   bottom: -7px;
+   left: -20px;
+   z-index: -1;
+}
+
+.toggle_name_reg::after{
+   content: "";
+   width: calc(100% + 10px);
+   height: 7px;
+   position: absolute;
+   bottom: -7px;
+   left: -5px;
+   z-index: -1;
+}
+
+.toggle_item_log:checked ~ .toggle_label .toggle_name_log::after{
+   animation: border 2s linear infinite;
+}
+
+.toggle_item_reg:checked ~ .toggle_label .toggle_name_reg::after{
+   animation: border 2s linear infinite;
 }
 
 .toggle_label{
@@ -150,6 +200,7 @@ body{
 }
 
 .toggle_label_name{
+   display: inline-block;
    cursor: pointer;
    font-family: Rajdhani;
    font-style: normal;
@@ -157,6 +208,10 @@ body{
    font-size: 50px;
    line-height: 64px;
    color: #343434;
+}
+
+.toggle_label_name:first-child{
+   margin-right: 50px;
 }
 
 .form_title{

@@ -19,7 +19,7 @@
 
 .nav_list{
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
 }
 
 .nav_item{
@@ -46,7 +46,7 @@
 
 .header_btn{
    text-decoration: none;
-   padding: 5px 15px;
+   padding: 10px 25px;
    font-family: Open Sans;
    font-style: normal;
    font-weight: 600;
@@ -86,7 +86,7 @@
 
 .head_page{
    display: flex;
-   height: 100vh;
+   height: 75vh;
 }
 
 .head_text{
@@ -109,7 +109,7 @@
 
 .enter{
    width: 160px;
-   height: 60px;
+   height: 50px;
    font-family: Open Sans;
    font-style: normal;
    font-weight: 600;
@@ -129,7 +129,7 @@
 
 .head_img{
    position: relative;
-   width: 95%;
+   width: 100%;
 }
 
 .ellipse{
@@ -142,7 +142,7 @@
 }
 
 .head_car{
-   width: 90%;
+   width: 100%;
 }
 
 .h2{
@@ -234,8 +234,8 @@
 }
 
 .rules{
-   padding-top: 200px;
-   padding-bottom: 200px;
+   padding-top: 70px;
+   padding-bottom: 90px;
 }
 
 .rules_h2{
