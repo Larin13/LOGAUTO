@@ -443,7 +443,7 @@
       padding: 50px 0;
    }
    .nav_link{
-      font-size: 10px;
+      font-size: 14px;
    }
    .header_btn{
       font-size: 12px;
@@ -497,13 +497,7 @@
    
 }
 
-@media (max-width: 890px) {
-   .footer_nav_link{
-      font-size: 10px;
-   }
-}
-
-@media (max-width: 835px) {
+@media (max-width: 840px) {
    .header{
       flex-direction: column;
    }
@@ -589,5 +583,8 @@
    .footer_nav_list{
      flex-direction: column;
      margin-left: -40px;
+   }
+   .footer_nav_link{
+      font-size: 14px;
    }
 }
