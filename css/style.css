@@ -434,13 +434,8 @@
 }
 
 
-@media (max-width: 890px) {
-   .footer_nav_link{
-      font-size: 10px;
-   }
-}
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
    .head_page{
       flex-direction: column;
    }
@@ -502,14 +497,20 @@
    
 }
 
-@media (max-width: 620px) {
+@media (max-width: 890px) {
+   .footer_nav_link{
+      font-size: 10px;
+   }
+}
+
+@media (max-width: 835px) {
    .header{
       flex-direction: column;
    }
    .logo{
       position: absolute;
       top: 0;
-      left: 20px;
+      left: 20px
    }
    .menu_toggle_label{
       display: block;
