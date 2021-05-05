@@ -108,7 +108,7 @@ body{
 
 .head_page{
    display: flex;
-   height: 75vh;
+   min-height: 75vh;
 }
 
 .head_text{
@@ -522,6 +522,15 @@ body{
    .menu_toggle_label{
       display: block;
    }
+   @keyframes menu {
+      0%{
+         transform: translateY(-150%);
+      }
+      50%{
+         transform: translateY(0);
+      }
+   }
+
    .nav{
       display: none;
    }
@@ -530,17 +539,29 @@ body{
       text-align: center;
       margin-left: -40px;
    }
+
+   .nav_item{
+      margin-bottom: 20px;
+      font-size: 16px;
+   }
+
    .header_btn_list{
       display: none;
    }
    .header_btn{
-      display: block;
+      display: inline-block;
       margin: 0 auto;
    }
+
+   .login{
+      margin-right: 15px;
+   }
    .menu_toggle:checked ~ .nav{
+      animation: menu 1s linear;
       display: block;
    }
    .menu_toggle:checked ~ .header_btn_list{
+      animation: menu 1s linear;
       display: block;
    }
    .car_item{
@@ -598,6 +619,7 @@ body{
      margin-left: -40px;
    }
    .footer_nav_link{
-      font-size: 14px;
+      font-size: 16px;
+      margin-bottom: 15px;
    }
 }
